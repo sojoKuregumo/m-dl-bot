@@ -5,6 +5,6 @@ pyrogram #use pyrofork if you want
 #...For For Manupulating Images...#
 pillow
 #...For Web Scrapping...#
-BeautifulSoup
+beautifulsoup4>=4.12.3
 #...For PDF Stuf...#
 fpdf
