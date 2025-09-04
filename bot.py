@@ -15,9 +15,9 @@ from bs4 import BeautifulSoup
 from fpdf import FPDF
 import shutil
 
-api_id = '' # Add Your Telegram API_ID Here
-api_hash = '' # Add Your Telegram API_ID Here
-bot_token = '' # Add Your Telegram API_ID Here
+api_id = int(os.environ.get("API_ID", 0))   # Telegram API ID (integer)
+api_hash = os.environ.get("API_HASH", "")   # Telegram API Hash
+bot_token = os.environ.get("BOT_TOKEN", "") # Bot Token
 
 app = Client("manga_search_bot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 
